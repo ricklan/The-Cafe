@@ -1,0 +1,56 @@
+@import '../../../globals/style.scss';
+
+#dashboard-host {
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    .floating-title {
+        font-size: $secondary-font;
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+    }
+
+    .buttons-array {
+        border: 1px solid blue;
+        position: relative;
+        padding: 2rem;
+        margin: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        > * {
+            margin: 2rem 1rem 0rem 0rem;
+            &:last-child {
+                margin-right: 0rem;
+            }
+        }
+        .array-title {
+            font-size: $tertiary-font;
+
+            position: absolute;
+            top: -1rem;
+            left: 1rem;
+        }
+    }
+    .settings-bar {
+        position: absolute;
+        bottom: 0;
+        width: calc(100% - 2rem);
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    #bottom-bar {
+        width: calc(100% - 4rem);
+        padding: 2rem;
+        bottom: 0;
+        position: fixed;
+    }
+}

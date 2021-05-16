@@ -1,0 +1,31 @@
+//remember to change theme in index.tsx if you want to change these colours,
+//theme in index.tsx dictates material-ui theme
+$background-colour: white;
+$primary-colour: blue;
+$secondary-colour: beige;
+
+$primary-font: 4rem;
+$secondary-font: 2rem;
+$tertiary-font: 1.3rem;
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,400&display=swap');
+.logo {
+    font-family: 'Raleway', sans-serif;
+    color: blue;
+    font-weight: 500;
+    user-select: none;
+
+    transition: all 0.5s ease;
+    cursor: default;
+    &:hover {
+        padding: 0 1rem;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+* {
+    font-family: 'PT Sans', sans-serif;
+}
+aside.emoji-picker-react {
+    position: absolute !important;
+}
